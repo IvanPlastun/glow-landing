@@ -1,0 +1,47 @@
+.feedback {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    &-description {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+}
+
+.social-network-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #c5c5c5;
+    color: @white;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 10px;
+}
+
+.icon:hover {
+    background-color: @OrangeRed;
+    font-size: 20px;
+    transition: background-color 0.5s ease-in-out;
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -ms-transition: background-color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out;
+}
+
+.icon:last-child {
+    margin-right: 0;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .feedback {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}

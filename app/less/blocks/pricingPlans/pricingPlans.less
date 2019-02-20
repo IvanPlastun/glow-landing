@@ -1,0 +1,203 @@
+.pricing-plans{
+    height: 500px;
+    background-color: @lightGray;
+    padding-top: 60px;
+}
+
+.pricing-preview {
+    text-align: center;
+    margin-bottom: 56px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.plans {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.plan-box {
+    width: 292px;
+    background-color: @white;
+    
+    & .plan-name {
+        height: 55px;
+        background-color: #322e2e;
+        font-family: @MyriPro;
+        text-align: center;
+        line-height: 55px;
+        color: #fefefe;
+        font-weight: 600;
+        font-size: 28px;
+    }
+    
+    & .plan-price {
+        font-family: @Novecwide;
+        color: #222;
+        font-size: 42px;
+        font-weight: 600;
+        padding: 16px;
+        text-align: center;
+    }
+    
+    & .plan-feature {
+        text-align: center;
+        border-top: 1px solid #c2c2c2;
+        margin-left: 16px;
+        margin-right: 16px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    
+    & .purchase {
+        height: 80px;
+        background-color: #322e2e;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        & .button-buy {
+            display: block;
+            width: 137px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.15);
+            font-family: @MyriPro;
+            color: @white;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 40px;
+            text-decoration: none;
+            text-align: center;
+        }
+    }
+}
+
+
+.plan-box:hover {
+    transform: scaleY(1.1);
+    
+    .plan-name {
+        background-color: @OrangeRed;
+    }
+    
+    .purchase {
+        background-color: @OrangeRed;
+    }
+}
+
+.comment {
+    font-family: @HelveNeue;
+    color: @darkGray;
+    font-size: 24px;
+    font-style: italic;
+    line-height: 32px;
+    text-align: center;
+}
+
+.author {
+    font-family: @MyriPro;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .pricing-plans {
+        height: 100%;
+        padding-top: 30px;
+    }
+    
+    .pricing-preview {
+        margin-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .plans {
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+    
+    .plan-box {
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    
+    .pricing-plans {
+        height: 100%;
+    }
+    
+    .pricing-preview {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .plans {
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+    
+    .plan-box {
+        margin-bottom: 40px;
+    }
+    
+    @media (min-width: 600px) {
+        .plan-box {
+            width: 288px;
+        }
+        
+        .plan-box:nth-child(2n-1) {
+           margin-right: 2px;
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1109px) {
+    .pricing-plans {
+        height: 100%;
+    }
+    
+    .plans {
+        flex-flow: row wrap;
+        justify-content: center;
+        
+    }
+    
+    .plan-box {
+        width: 360px;
+        margin-bottom: 40px;
+    }
+    
+    .plan-box:nth-child(2n-1) {
+        margin-right: 5px;
+    }
+}
+
+@media (min-width: 1110px) and (max-width: 1180px) {
+    @media (max-width: 1120px) {
+        .plan-box {
+            width: 274px;
+        }
+    }
+    
+    @media (max-width: 1140px) {
+        .plan-box {
+            width: 279px;
+        }
+    }
+    
+    @media (min-width: 1150px) {
+        .plan-box {
+            width: 285px;
+        }
+    }
+}
+
+
+

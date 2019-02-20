@@ -1,0 +1,196 @@
+.features {
+    height: 500px;
+}
+.position-elements {
+    display: flex;
+}
+
+.description-features {
+    margin-top: 58px;
+}
+
+.features-block {
+    margin-bottom: 59px;
+   // padding-left: 20px;
+   //    padding-right: 20px;
+    
+    &__heading {
+        font-family: @MyriPro;
+        color: #222;
+        font-weight: 600;
+        line-height: 18px;
+    }
+    
+    &__text {
+        font-family: @HelveNeue;
+        color: @darkGray;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: justify;
+    }
+}
+
+.image-phone {
+    position: relative;
+    top: -300px;
+    left: 0;
+    
+    & .option {
+        border-radius: 50%;
+        border: 5px solid rgba(255, 255, 255, .15);
+    }
+    
+    &__option {
+        position: absolute;
+    }
+    
+    & .option-link {
+        display: block;
+        border-radius: 50%;
+        background-color: #f4f4f4;
+        width: 16px;
+        height: 16px;
+    }
+    
+    & .option:hover {
+        border: 8px solid rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+        
+        & .option-link {
+            background-color: @OrangeRed;
+        }
+    }
+}
+
+.option_position1 {
+    top: 290px;
+    left: 140px;
+}
+
+.option_position2 {
+    top: 195px;
+    right: 140px;
+}
+
+.option_position3 {
+    top: 405px;
+    right: 145px;
+}
+
+.option_position4 {
+    bottom: 290px;
+    left: 140px;
+}
+
+@media (min-width: 320px) and (max-width: 599px) {
+    .features {
+        height: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .position-elements {
+        flex-direction: column;
+    }
+    
+    .description-features {
+        margin-top: 0;
+    }
+    
+    .image-phone {
+        top: 0;
+        order: -1;
+        
+        .iphone {
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    .option_position1 {
+        top: 35%;
+        left: 30%;
+    }
+    
+    .option_position2 {
+        top: 23%;
+        right: 27%;
+    }
+    
+    .option_position3 {
+        top: 50%;
+        right: 30%;
+    }
+    
+    .option_position4 {
+        bottom: 33%;
+        left: 30%;
+    }
+    
+    .features-block {
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 799px) {
+    
+    .features {
+        height: 100%;
+        padding-bottom: 60px;
+    }
+    
+    .container {
+        width: 100%;
+    }
+    
+    .position-elements {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .description-features {
+        flex-basis: 300px;
+    }
+    
+    .image-phone {
+        top: 20px;
+        order: 0;
+        
+        .iphone {
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    .option_position1 {
+        top: 35%;
+        left: 30%;
+    }
+    
+    .option_position2 {
+        top: 23%;
+        right: 27%;
+    }
+    
+    .option_position3 {
+        top: 50%;
+        right: 30%;
+    }
+    
+    .option_position4 {
+        bottom: 33%;
+        left: 30%;
+    }
+    
+    .features-block {
+        margin-bottom: 58px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .container {
+        width: 100%;
+    }
+}

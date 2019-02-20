@@ -1,0 +1,82 @@
+.about-glow {
+    background-color: @lightGray;
+}
+
+.info {
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    &__text {
+        margin-right: 145px;
+        
+        &_margin {
+            margin-bottom: 10px;
+        }
+    }
+        
+    &-video__settings {
+        width: 500px;
+        height: 307px;
+        border-radius: 20px;
+    }
+    
+    &__list {
+        font-family: @HelveNeue;
+        & li {
+            list-style-image: url(../img/bullet.png);
+            
+            & a {
+                color:  @darkGray;
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+.info__list li a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .info {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        flex-direction: column;
+        
+        &__text {
+            margin-right: 0;
+        }
+    }
+    
+    .info-video__settings {
+        width: 100%;
+        height: 200px;
+        border-radius: 3%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 999px) {
+    .info {
+        flex-flow: row wrap;
+        justify-content: center;
+        
+        &__text {
+            margin-right: 0;
+        }
+        
+        &-video {
+            width: 100%;
+        }
+        
+        &-video__settings {
+            width: 100%;
+        }
+        
+    }
+}
+
+

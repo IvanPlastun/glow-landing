@@ -1,0 +1,105 @@
+.subscribe {
+    background-image: url(../img/backgroundHeader.png);
+    background-position: -120px -200px;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.subscription-form {
+    font-family: @MyriPro;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.subscribe_margin {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.field-email {
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 375px;
+    height: 75px;
+    border: 0;
+    padding: 30px;
+    color:  @white;
+    margin-right: 8px;
+    outline: none;
+}
+
+.field-email::-webkit-input-placeholder {
+        color: @white; 
+        opacity: 1;
+}
+
+.field-email::-moz-input-placeholder {
+    color: @white; 
+    opacity: 1;
+}
+
+.field-email:-moz-input-placeholder {
+    color: @white; 
+    opacity: 1;
+}
+
+.field-email:-ms-input-placeholder {
+    color: @white; 
+    opacity: 1;
+}
+
+.button-subscribe {
+    width: 149px;
+    height: 73px;
+    background-color: @OrangeRed;
+    border: 0;
+    color: @white;
+    cursor: pointer;
+    outline: none;
+}
+
+.button-subscribe:hover {
+    background-color: #ac2a1b;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .subscribe {
+        background-position: center;
+    }
+    
+    .field-email {
+        margin-bottom: 20px;
+    }
+    
+    @media (min-width: 320px) and (max-width: 400px) {
+        .field-email {
+            width: 100%;
+        }
+    }
+    
+    @media (min-width: 400px) {
+        .field-email {
+            width: 375px;
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .subscribe {
+        background-position: center;
+    }
+    
+    @media (max-width: 550px) {
+        .field-email {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1180px) {
+    .subscribe {
+        background-position: center;
+    }
+}
